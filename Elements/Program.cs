@@ -33,22 +33,22 @@
         }
         static void Main(string[] args)
         {
-            // welcome
+            // Welcome
             Console.WriteLine("Welcome to Elements");
             Console.WriteLine("===================\n");
 
-            // three instances: oxygen, iron and gold
+            // Three instances of class Element: oxygen, iron and gold
             Element oxygen = new Element("Oxygen", 8, "non-metal", 54.36, 90.188);
             Element iron = new Element("Iron", 26, "metal", 1811, 3134);
             Element gold = new Element("Gold", 79, "metal", 1337.33, 3243);
 
-            // print element data for oxygen, iron and gold
+            // Print element data for oxygen, iron and gold
             Console.WriteLine("Printing 3 instances of class Element");
             oxygen.Print();
             iron.Print();
             gold.Print();
 
-            // array with 6 element, adding the instances of oxygen, iron and gold
+            // Array with 6 element, adding the instances of oxygen, iron and gold
             // plus the new hydrogen, bromine and mercury
             Element[] elements = new Element[6] { 
                 oxygen,
@@ -59,14 +59,14 @@
                 new Element("Mercury", 80, "metal", 234.3210, 629.88)
             };
 
-            // print all elements in the array
+            // Print all elements in the array
             Console.WriteLine("\nListing all elements in the array:");
             foreach (Element element in elements)
             {
                 element.Print();
             }
 
-            // print all metals in the array (names only
+            // Print all metals in the array (names only
             Console.WriteLine("\nThese elements are metals");
             foreach (Element element in elements)
             {
@@ -76,7 +76,7 @@
                 }
             }
 
-            // print elements having a melting point below 273.16 K and a boiling point above 273.16 K
+            // Print elements having a melting point below 273.16 K and a boiling point above 273.16 K
             Console.WriteLine("\nElements having a melting point (mp) below 273.16 K and a boiling point (bp) above 273.16 K");
             foreach (Element element in elements)
             {
@@ -86,6 +86,7 @@
                 }
             }
 
+            // Wait for key stroke to quit program
             Console.ReadKey();
 
             
