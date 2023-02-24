@@ -59,12 +59,24 @@
                 new Element("Mercury", 80, "metal", 234.3210, 629.88)
             };
 
-            Console.WriteLine("\nListing all elements in the array:");
             // print all elements in the array
+            Console.WriteLine("\nListing all elements in the array:");
             foreach (Element element in elements)
             {
                 element.Print();
             }
+
+            // print all metals in the array (names only
+            Console.WriteLine("\nThese elements are metals");
+            foreach (Element element in elements)
+            {
+                if (element.category == "metal")
+                {
+                    Console.WriteLine($" * {element.name}");
+                }
+            }
+
+
             
         }
     }
