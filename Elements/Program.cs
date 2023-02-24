@@ -76,6 +76,17 @@
                 }
             }
 
+            // print elements having a melting point below 273.16 K and a boiling point above 273.16 K
+            Console.WriteLine("\nElements having a melting point (mp) below 273.16 K and a boiling point (bp) above 273.16 K");
+            foreach (Element element in elements)
+            {
+                if( element.meltingPoint < 273.16 && element.boilingPoint > 273.16)
+                {
+                    Console.WriteLine($" * {element.name}, (mp: {element.meltingPoint} K, bp: {element.boilingPoint} K)");
+                }
+            }
+
+            Console.ReadKey();
 
             
         }
