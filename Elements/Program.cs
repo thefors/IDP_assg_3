@@ -43,6 +43,7 @@
             Element gold = new Element("Gold", 79, "metal", 1337.33, 3243);
 
             // print element data for oxygen, iron and gold
+            Console.WriteLine("Printing 3 instances of class Element");
             oxygen.Print();
             iron.Print();
             gold.Print();
@@ -58,6 +59,12 @@
                 new Element("Mercury", 80, "metal", 234.3210, 629.88)
             };
 
+            Console.WriteLine("\nListing all elements in the array:");
+            // print all elements in the array
+            foreach (Element element in elements)
+            {
+                element.Print();
+            }
             
         }
     }
