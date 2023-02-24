@@ -46,6 +46,18 @@
             oxygen.Print();
             iron.Print();
             gold.Print();
+
+            // array with 6 element, adding the instances of oxygen, iron and gold
+            // plus the new hydrogen, bromine and mercury
+            Element[] elements = new Element[6] { 
+                oxygen,
+                iron,
+                gold,
+                new Element("Hydrogen", 1, "non-metal", 13.99, 20.271),
+                new Element("Bromine", 35, "non-metal", 265.8, 322.0),
+                new Element("Mercury", 80, "metal", 234.3210, 629.88)
+            };
+
             
         }
     }
